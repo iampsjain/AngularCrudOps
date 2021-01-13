@@ -1,0 +1,12 @@
+<div class="row">
+<div class="col-md-4 mt-2" *ngFor="let obj of Posts">
+    <mat-card >
+        <mat-card-title>
+            {{obj?.title}}
+        </mat-card-title>
+        <mat-card-content>
+           <h6> {{obj?.body}}</h6> 
+        </mat-card-content>
+        </mat-card>
+</div>
+</div>

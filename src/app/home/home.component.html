@@ -1,0 +1,18 @@
+<div class="container">
+    <h3>List of users</h3>    
+
+    <div class="row">
+        <div class="col-md-4 mt-2" *ngFor="let user of Users">
+            <mat-card>
+                <mat-card-title>
+                    {{user.name}} 
+                </mat-card-title>
+                <mat-card-content>
+                   <h6> {{user.email}}</h6> 
+                   <a [routerLink]="['/post', user.id]">Get Posts </a>
+                    <a [routerLink]="['/albums',user.id]">Get Albums</a>
+                </mat-card-content>
+                </mat-card>
+        </div>
+    </div>
+</div>
